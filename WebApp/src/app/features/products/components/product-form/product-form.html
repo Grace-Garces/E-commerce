@@ -1,0 +1,49 @@
+<div class="form-container">
+  <!-- Seção de busca para tela de Edição via Menu -->
+  <div *ngIf="mode === 'edit-search'" class="search-section">
+    <label for="product-search">Buscar Produto por Nome ou Código</label>
+    <input type="text" id="product-search" (input)="onSearch($event)" placeholder="Digite para buscar...">
+    <div *ngIf="filteredProducts.length > 0" class="search-results">
+      <div *ngFor="let p of filteredProducts" (click)="selectProduct(p)" class="search-item">
+        {{ p.code }} - {{ p.description }}
+      </div>
+    </div>
+  </div>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="product-code">Código do Produto</label>
+        <input id="product-code" type="text" formControlName="code">
+      </div>
+      <div class="form-group">
+        <label for="product-description">Descrição</label>
+        <input id="product-description" type="text" formControlName="description">
+      </div>
+      <div class="form-group">
+        <label for="product-department">Departamento</label>
+        <select id="product-department" formControlName="departmentCode">
+          <option value="" disabled>Selecione...</option>
+          <option *ngFor="let dep of departments$ | async" [value]="dep.code">
+            {{ dep.description }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="product-price">Preço</label>
+        <input id="product-price" type="number" formControlName="price">
+      </div>
+      <div class="form-group form-group-full">
+        <label class="switch-label">Status</label>
+        <label class="switch">
+          <input type="checkbox" formControlName="status">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="button" (click)="onCancel()" class="button-secondary">Cancelar</button>
+      <button type="submit" [disabled]="productForm.invalid" class="button-primary">Salvar</button>
+    </div>
+  </form>
+</div>

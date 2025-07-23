@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Container da Tabela (Glassmorphism)
+   ========================================================================== */
+.table-container {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+}
+
+th {
+  font-weight: 600;
+  color: #1e3a8a; /* Cor do tema */
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  color: #334155; /* slate-700 */
+  font-weight: 500;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td[colspan="5"] {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b; /* slate-500 */
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Botões de Ação (Editar, Excluir)
+   ========================================================================== */
+.actions-cell {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s ease;
+}
+
+.action-btn .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b; /* slate-500 */
+  transition: color 0.2s;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.action-btn--edit:hover {
+  background-color: #dbeafe; /* blue-100 */
+}
+.action-btn--edit:hover .icon {
+  color: #2563eb; /* blue-600 */
+}
+
+.action-btn--delete:hover {
+  background-color: #fee2e2; /* red-100 */
+}
+.action-btn--delete:hover .icon {
+  color: #dc2626; /* red-600 */
+}
+
+/* ==========================================================================
+   Switch de Status
+   ========================================================================== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px; /* Aumentado */
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1; /* slate-300 */
+  transition: .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider {
+  background-color: #22c55e; /* green-500 */
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}

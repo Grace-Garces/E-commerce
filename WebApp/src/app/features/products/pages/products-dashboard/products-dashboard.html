@@ -1,0 +1,57 @@
+<div class="dashboard-container">
+  
+  <div class="dashboard-header">
+    <h1 class="dashboard-title">
+      {{ currentView === 'list' ? 'Lista de Produtos' : (formMode === 'edit' ? 'Editar Produto' : 'Novo Produto') }}
+    </h1>
+    <button *ngIf="currentView === 'list'" (click)="showCreateForm()" class="dashboard-button">
+      Criar Novo Produto
+    </button>
+  </div>
+
+  <div *ngIf="currentView === 'list'" class="filters-container">
+    <input id="search-input" (input)="onSearch($event)" type="text" class="search-input" placeholder="Pesquisar por nome ou código...">
+    <select id="department-select" (change)="onDepartmentChange($event)" class="department-select">
+      <option value="">Todos os Departamentos</option>
+      <option *ngFor="let dep of departments" [value]="dep.code">{{ dep.description }}</option>
+    </select>
+  </div>
+
+  <div *ngIf="isLoading && currentView === 'list'" class="loading-indicator">
+    Carregando produtos...
+  </div>
+
+  <app-product-list
+    *ngIf="!isLoading && currentView === 'list'"
+    [products]="products"
+    (editProduct)="showEditForm($event)"
+    (deleteRequest)="handleDeleteRequest($event)"
+    (statusChangeRequest)="handleStatusChangeRequest($event)">
+  </app-product-list>
+
+  <app-product-form
+    *ngIf="currentView === 'form'"
+    [product]="productToEdit"
+    [mode]="formMode"
+    [allProducts]="products"
+    (save)="handleSave($event)"
+    (cancel)="handleCancel()">
+  </app-product-form>
+</div>
+
+<div *ngIf="showConfirmation" class="modal-overlay">
+  <div class="modal-box">
+    <h3 class="modal-title">{{ confirmationTitle }}</h3>
+    <p class="modal-message">{{ confirmationMessage }}</p>
+    <div class="modal-actions">
+      <button (click)="onCancelConfirmation()" class="button-secondary">Cancelar</button>
+      <button (click)="onConfirm()" class="button-danger">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showNotification" class="toast-notification" 
+     [class.toast-notification--success]="notificationType === 'success'"
+     [class.toast-notification--error]="notificationType === 'error'">
+  {{ notificationMessage }}
+</div>

@@ -1,0 +1,15 @@
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.deps.json
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.pdb
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Domain.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Domain.pdb
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfo.cs
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductS.4D387919.Up2Date
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\refint\ProductService.Infrastructure.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.pdb
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ref\ProductService.Infrastructure.dll

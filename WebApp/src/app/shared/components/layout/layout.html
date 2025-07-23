@@ -1,0 +1,56 @@
+<div class="layout-container" (click)="onOutsideClick($event)">
+
+  <main class="main-content">
+    <header class="main-content__header">
+      <div class="header-brand">
+        <svg class="header-brand__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.33,1.07a1,1,0,0,0-1.06,0L3.83,6.4A1,1,0,0,0,3,7.27v9.46a1,1,0,0,0,.83.97l7.44,2.48a1,1,0,0,0,1.06,0l7.44-2.48a1,1,0,0,0,.83-.97V7.27a1,1,0,0,0-.83-.97ZM12,17.7,6,15.77V9.2L12,11.23Zm0-7.46L6,8.31,12,6.27l6,2.04Z"/>
+        </svg>
+        <h1 class="header-brand__title">TesteMaxima</h1>
+      </div>
+    </header>
+
+    <div class="main-content__body">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+  <aside id="sidebar" #sidebar class="sidebar" [class.sidebar--open]="isSidebarOpen" [class.sidebar--closed]="!isSidebarOpen">
+    
+    <div class="sidebar__header">
+      <span class="sidebar__title" [class.hidden]="!isSidebarOpen">Menu</span>
+      <button id="sidebar-toggle" (click)="toggleSidebar()" class="sidebar__toggle-btn">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+
+    <nav class="sidebar__nav">
+      <a (click)="navigateToProductList()" routerLink="/admin/products" routerLinkActive="nav-link--active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">
+        <svg class="nav-link__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+        <span class="nav-link__text" [class.hidden]="!isSidebarOpen">Tela Inicial</span>
+      </a>
+      
+      <div class="nav-group">
+        <button (click)="toggleCadastroMenu()" class="nav-link nav-link--toggle">
+          <div class="nav-link__content">
+            <svg class="nav-link__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="nav-link__text" [class.hidden]="!isSidebarOpen">Cadastro</span>
+          </div>
+          <svg class="nav-link__arrow-icon" [class.rotated]="isCadastroMenuOpen" [class.hidden]="!isSidebarOpen" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="submenu" [class.submenu--open]="isCadastroMenuOpen" [class.hidden]="!isSidebarOpen">
+          <a (click)="navigateToNewProduct()" class="submenu__link" [class.submenu__link--active]="(dashboardState.viewMode$ | async) === 'create'">Novo Produto</a>
+          <a (click)="navigateToEditProduct()" class="submenu__link" [class.submenu__link--active]="(dashboardState.viewMode$ | async) === 'edit-search'">Editar Produto</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar__footer">
+      <a (click)="logout()" class="nav-link">
+        <svg class="nav-link__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+        <span class="nav-link__text" [class.hidden]="!isSidebarOpen">Sair</span>
+      </a>
+    </div>
+  </aside>
+
+</div>

@@ -1,0 +1,36 @@
+<div class="login-container">
+  
+  <div class="login-container__panel login-container__panel--info">
+    <h1 class="login-container__title">BEM-VINDO DE VOLTA</h1>
+    <p class="login-container__subtitle">Que bom te ver. Sentimos sua falta!</p>
+  </div>
+
+  <div class="login-container__panel login-container__panel--form">
+    <div class="login-form-wrapper">
+      
+      <div class="login-form__header">
+        <h2 class="login-form__title">LOGIN</h2>
+        <p class="login-form__subtitle">Use seu e-mail e senha</p>
+      </div>
+
+      <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        
+        <div class="login-form__group">
+          <label for="email" class="login-form__label">E-mail</label>
+          <input type="email" id="email" formControlName="email" class="login-form__input" placeholder="seuemail@exemplo.com">
+        </div>
+        
+        <div class="login-form__group">
+          <label for="password" class="login-form__label">Senha</label>
+          <input type="password" id="password" formControlName="password" class="login-form__input" placeholder="********">
+        </div>
+        
+        <button type="submit" [disabled]="loginForm.invalid" class="login-form__button">
+          Acessar
+        </button>
+        
+        <div *ngIf="error" class="login-form__error">{{ error }}</div>
+      </form>
+    </div>
+  </div>
+</div>
