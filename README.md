@@ -89,6 +89,21 @@ A interface Angular usa uma **arquitetura modular baseada em componentes**.
 
 ##  Configuração
 
+## 📥 Como baixar e iniciar o projeto
+
+Antes de começar a configurar e rodar o projeto localmente, é necessário fazer o download dos arquivos do repositório. Para isso, siga os passos abaixo:
+
+### 🔁 1. Clone o repositório do GitHub
+
+Abra o terminal ou prompt de comando e execute:
+
+```bash
+# Clona o projeto do GitHub para sua máquina
+git clone https://github.com/Grace-Garces/MaximaTeste.git
+
+# Acesse a pasta do projeto clonado
+cd MaximaTeste
+
 ### 1. Banco de Dados
 
 Crie o banco de dados `testemaxima` e execute o script SQL incluído no projeto (`script.sql`).
