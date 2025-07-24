@@ -153,8 +153,7 @@ product.ts
 ##  Primeiro Acesso
 
 1. Vá até `/swagger` e registre um usuário com `POST /api/auth/register`.
-
-###Caso deseje, basta copiar e colar este exemplo:
+Caso deseje, basta copiar e colar este exemplo:
 
 ```
 {
