@@ -63,7 +63,7 @@ A interface Angular usa uma **arquitetura modular baseada em componentes**.
   │       └── services/    (product.service.ts, department.service.ts)
   │
   ├── shared/
-  │   ├── components/      (Menu lateral, layout geral)
+  │   ├── components/      (layout geral)
   │   └── models/          (Interfaces TypeScript como Product, User, etc.)
   │
   ├── app.config.ts        (Configuração principal)
