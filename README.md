@@ -14,7 +14,7 @@ Sistema completo de cadastro de produtos com **.NET 8 (API REST)** no backend e 
 
 ---
 
-## 📐 Arquitetura do Projeto
+##  Arquitetura do Projeto
 
 ### 1. Visão Geral (Arquitetura de Alto Nível)
 
@@ -34,7 +34,7 @@ A API segue os princípios da **Clean Architecture**, com separação de respons
 ![Diagrama Arquitetural](./Diagrama.png)
 
 
-#### 📦 Detalhes das Camadas
+####  Detalhes das Camadas
 
 - **`ProductService.Domain`**: Contém as entidades de negócio e contratos (interfaces). Não depende de outras camadas.
 - **`ProductService.Application`**: Orquestra os fluxos de negócio. Contém serviços e casos de uso.
@@ -70,7 +70,7 @@ A interface Angular usa uma **arquitetura modular baseada em componentes**.
   └── app.routes.ts        (Rotas da aplicação)
 ```
 
-#### 📦 Resumo das Pastas
+####  Resumo das Pastas
 
 - **`core/`**: Serviços e regras compartilhadas, instanciados globalmente.
 - **`features/`**: Módulos funcionais, cada um com seus próprios componentes.
@@ -89,11 +89,11 @@ A interface Angular usa uma **arquitetura modular baseada em componentes**.
 
 ##  Configuração
 
-## 📥 Como baixar e iniciar o projeto
+##  Como baixar e iniciar o projeto
 
 Antes de começar a configurar e rodar o projeto localmente, é necessário fazer o download dos arquivos do repositório. Para isso, siga os passos abaixo:
 
-### 🔁 1. Clone o repositório do GitHub
+###  1. Clone o repositório do GitHub
 
 Abra o terminal ou prompt de comando e execute:
 
@@ -104,7 +104,7 @@ git clone https://github.com/Grace-Garces/MaximaTeste.git
 # Acesse a pasta do projeto clonado
 cd MaximaTeste
 
-### 1. Banco de Dados
+### 1. Banco de Dados (MySQL)
 
 Crie o banco de dados `testemaxima` e execute o script SQL incluído no projeto (`script.sql`).
 
