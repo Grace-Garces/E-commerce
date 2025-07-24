@@ -158,7 +158,7 @@ Caso deseje, basta copiar e colar este exemplo:
 ```
 {
   "fullName": "TesteMaxima",
-  "email": "TesteMaxima@malito",
+  "email": "TesteMaxima@malito.com",
   "password": "maxima"
 }
 ```
