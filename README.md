@@ -153,6 +153,16 @@ product.ts
 ##  Primeiro Acesso
 
 1. Vá até `/swagger` e registre um usuário com `POST /api/auth/register`.
+
+###Caso deseje, basta copiar e colar este exemplo:
+
+```
+{
+  "fullName": "TesteMaxima",
+  "email": "TesteMaxima@malito",
+  "password": "maxima"
+}
+```
 2. Use o login para acessar o frontend (`http://localhost:4200`).
 
 ---
