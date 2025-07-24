@@ -162,16 +162,15 @@ Caso deseje, basta copiar e colar este exemplo:
   "password": "maxima"
 }
 ```
-2. Use o login para acessar o frontend (`http://localhost:4200`).
+2. Use as credenciais de login para acessar o frontend (`http://localhost:4200`).
 
 ---
 
 ##  Funcionalidades
 
 - Autenticação com JWT
-- CRUD de Produtos
-- Filtro por código/descrição
-- Cadastro e visualização por departamento
+- CRUD de Produtos (Com delete logico, o produto some no front-end. Mas permanece no banco de dados)
+- Pesquisa por código/descrição e filtro por departamento 
 
 ---
 
