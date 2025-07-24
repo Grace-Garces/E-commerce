@@ -142,11 +142,12 @@ npm install
 ng serve -o
 ```
 
-3. Certifique-se que o `apiUrl` nos arquivos de serviço está correto com a porta da API.
+3. Certifique-se que o `apiUrl` nos arquivos de serviço está correto com a porta da API em:
 ``` Arquivos:
 auth.ts
 department.ts
 product.ts
+```
 ---
 
 ##  Primeiro Acesso
