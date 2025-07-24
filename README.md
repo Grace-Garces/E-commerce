@@ -101,12 +101,13 @@ Abra o terminal ou prompt de comando e execute:
 # Clona o projeto do GitHub para sua máquina
 git clone https://github.com/Grace-Garces/MaximaTeste.git
 
-# Acesse a pasta do projeto clonado
+# Acesse a pasta do projeto clonado 
 cd MaximaTeste
+(atalho para abrir o projeto VS code pelo cmd ou git bash: "code .")
 
 ### 1. Banco de Dados (MySQL)
 
-Crie o banco de dados `testemaxima` e execute o script SQL incluído no projeto (`script.sql`).
+Execute o script SQL incluído no projeto (`script.sql`) no MySQL. O mesmo irá não só criar o banco, mas também as tabelas necessárias.
 
 ---
 
@@ -142,7 +143,10 @@ ng serve -o
 ```
 
 3. Certifique-se que o `apiUrl` nos arquivos de serviço está correto com a porta da API.
-
+``` Arquivos:
+auth.ts
+department.ts
+product.ts
 ---
 
 ##  Primeiro Acesso
