@@ -1,5 +1,5 @@
 
-# 🛒 Projeto de Cadastro de Produtos
+#  Projeto de Cadastro de Produtos
 
 Sistema completo de cadastro de produtos com **.NET 8 (API REST)** no backend e **Angular** no frontend.
 
