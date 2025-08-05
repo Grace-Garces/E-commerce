@@ -124,3 +124,4 @@ C:\Users\grace\source\repos\TesteMaxima\ProductService.Tests\obj\Debug\net8.0\re
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Tests\obj\Debug\net8.0\ProductService.Tests.pdb
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Tests\obj\Debug\net8.0\ProductService.Tests.genruntimeconfig.cache
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Tests\obj\Debug\net8.0\ref\ProductService.Tests.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Tests\obj\Debug\net8.0\ProductService.Tests.sourcelink.json

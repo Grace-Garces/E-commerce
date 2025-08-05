@@ -13,3 +13,4 @@ C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\refint\ProductService.Infrastructure.dll
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.pdb
 C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ref\ProductService.Infrastructure.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.sourcelink.json

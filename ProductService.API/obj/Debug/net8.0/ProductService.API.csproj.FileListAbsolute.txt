@@ -67,10 +67,10 @@ C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\stat
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ProductS.86321A10.Up2Date
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ProductService.API.dll
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\refint\ProductService.API.dll
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ProductService.API.pdb
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ProductService.API.genruntimeconfig.cache
 C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ref\ProductService.API.dll
+C:\Users\grace\source\repos\TesteMaxima\ProductService.API\obj\Debug\net8.0\ProductService.API.sourcelink.json
